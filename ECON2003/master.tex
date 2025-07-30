@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm, compat=newest}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{multirow, tcolorbox, xcolor, booktabs}
+
+\usepackage{fontspec}
+\setmainfont{Comfortaa Light}
+
+
+\definecolor{highlight}{HTML}{F8D7DA}
+
+\newcommand{\Pink}[1]{
+    \begin{tcolorbox}[colback=highlight, colframe=highlight, width=\textwidth, boxrule=0mm]
+        #1
+    \end{tcolorbox}
+}
+
+\usepackage{setspace}
+
+\setstretch{1.2}  % Adjust line spacing
+\setlength{\parindent}{0pt}  % Remove paragraph indentation
+\setlength{\parskip}{5pt}  % Space between paragraphs
+\definecolor{highlight}{HTML}{F8D7DA}
+\input{preamble.tex}
+
+
+\begin{document}
+
+% \input{ch08_notes.tex}
+% \input{ch08_questions.tex}
+% \input{ch09_notes.tex}
+% \input{ch09_questions.tex}
+ \input{ch20_questions.tex}
+\end{document}  

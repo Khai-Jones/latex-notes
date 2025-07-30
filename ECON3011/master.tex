@@ -1,0 +1,136 @@
+\documentclass{article}
+\usepackage{pgfplots}
+\usepackage{pgf}
+\usepackage{subfiles}
+\pgfplotsset{compat=newest}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{multirow, tcolorbox, xcolor, booktabs}
+\usepackage{titlesec}
+\usepackage{subcaption}
+\usepackage[authordate]{biblatex-chicago} 
+\addbibresource{references.bib}
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=black, citecolor=black]{hyperref}
+\usepackage{helvet}
+\usepackage{fontspec}
+\usepackage[titles]{tocloft} 
+
+\setmainfont{Acathist}
+\usepackage{setspace}
+
+
+\setlength{\parindent}{0pt}  % Remove paragraph indentation
+\setlength{\parskip}{5pt}  % Space between paragraphs
+
+\input{preamble03.tex}
+% Reset the section counter to 0
+\setcounter{section}{0}
+
+
+
+% Define custom colors
+\definecolor{orange}{HTML}{089000} % RGB value for a more orange shade
+\definecolor{sectioncolor}{HTML}{32213A} 
+\definecolor{subsectioncolor}{HTML}{D0312D} % #CFEE9E for subsection headings
+\definecolor{teal}{HTML}{008080}  % Teal color for contrast
+
+% Customize section headings
+\titleformat{\section}
+{\normalfont\Large\bfseries\color{sectioncolor}} % Format for \section
+  {\thesection}{1em}{}
+
+% Customize subsection headings
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{subsectioncolor}} % Format for \subsection
+  {\thesubsection}{1em}{}
+
+
+\newcounter{lecture}
+\newcommand{\lecturetitle}[2]{% Now takes two arguments
+  \setcounter{lecture}{#1}%
+  \renewcommand{\thesection}{\thelecture.\arabic{section}} % Section numbering
+  \renewcommand{\thesubsection}{\thesection.\arabic{subsection}} % Subsection numbering
+  \renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}} % Subsubsection numbering
+  \begin{center}
+    {\Huge{Lecture \thelecture: #2}} % Uses both arguments
+  \end{center}
+  \vspace{1cm} % Add some vertical space after the title
+}
+
+\begin{document}
+
+
+
+% Cover Page
+% \begin{titlepage}
+    % Center the image
+  %  \centering
+  %  \includegraphics[width=1\textwidth]{original.png} % Adjust the width as needed
+  %  \vspace{0.3cm} % Reduced space after the image
+
+    % Left-align everything else
+  %  \raggedright % Switch to left alignment
+
+    % Title of the Note
+   % {\Huge\bfseries ECON3011 Assignment: Macaronia\par}
+   % \vspace{0.8cm} % Reduced space after the title
+% Course Name and Number
+%{\Large\bfseries Course Name: ECON3011 Economics of Financial Institutions\par}
+% Name of Student with IDs
+%{\Large\bfseries Khai Jones: 400019518\par}
+%{\Large\bfseries Carly Jordan: 400017108\par}
+%{\Large\bfseries Nikayla Als: 400018491\par}
+
+
+
+% Faculty
+%{\Large\bfseries Faculty: Social Sciences\par}
+
+% Date
+ %   {\Large Date: \today\par} % Automatically inserts the current date
+  %  {\Large\bfseries Group H\par}
+   % \vspace{0.8cm} % Reduced space after the faculty
+%\end{titlepage}
+
+% PROJECT %
+%------------% 
+%Title Page 
+% \input{title.tex}
+% Introduction 
+% \input{Introduction.tex}
+%Background and Stylised Facts 
+%\input{background_and_stylised.tex}
+% Analysis of the Issue
+%\input{introduction.tex}
+% \input{internal.tex}
+%\input{internal_draft_2.tex}
+% \input{external.tex}
+% \input{theoretical_framework.tex}
+% recommendations 
+%\input{recommendations.tex}
+% Conclusion
+%\input{conclusion.tex}
+%\nocite{*}
+%\printbibliography % Generates the references section
+
+% EXAM NOTES %
+%------------%
+\input{systems01.tex}
+\input{tut01.tex}
+\input{theory02.tex}
+\input{tut02.tex}
+\input{role_fin03.tex}
+\input{tut03.tex}
+\input{cent_bank04.tex}
+\input{tut04.tex}
+\input{monet05.tex}
+\input{tut05.tex}
+\input{fin_markts06.tex}
+\input{tut06.tex}
+\input{syst07.tex}
+\input{tut07.tex}
+\input{macro_prud08.tex}
+\input{tut08.tex}
+\input{ass_sup09.tex}
+\input{tut09.tex}
+
+\end{document}

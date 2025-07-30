@@ -1,0 +1,34 @@
+\documentclass[master.tex]{subfiles}
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm, compat=1.18}
+
+\begin{document}
+
+
+\begin{tikzpicture} 
+  \begin{tikzpicture}
+    \begin{axis}[
+        xlabel={Year},
+        ylabel={Growth Rate (\%)},
+        title={Credit Extended by Banks and Credit Unions to Households (2015-2022)},
+        xtick=data,  % Show all years as ticks
+        xticklabels from table={credit_growth.csv}{Years},  % Use years from the CSV file
+        x tick label style={rotate=45, anchor=east},  % Rotate x-axis labels for better readability
+        legend pos=north west,  % Position the legend
+        grid=major,  % Enable grid lines
+        ymajorgrids=true,  % Enable horizontal grid lines
+        nodes near coords,  % Show values on the plot
+        nodes near coords align={vertical},  % Align values vertically
+    ]
+    % Plot for Banks
+    \addplot[blue, mark=*] table [x expr=\coordindex, y=Banks_Growth_Rate, col sep=comma] {credit_growth.csv};
+    \addlegendentry{Banks}
+
+    % Plot for Credit Unions
+    \addplot[red, mark=square*] table [x expr=\coordindex, y=Credit_Unions_Growth_Rate, col sep=comma] {credit_growth.csv};
+    \addlegendentry{Credit Unions}
+    \end{axis}
+\end{tikzpicture}
+\end{tikzpicture}
+
+\end{document}

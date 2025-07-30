@@ -1,0 +1,27 @@
+\section*{2.1 Systems of Linear Equations}
+
+
+\begin{tikzpicture}[
+  every node/.style={font=\small, align=center},
+  box/.style={draw, rounded corners, fill=blue!10, inner sep=3pt},
+  greenbox/.style={draw, rounded corners, fill=green!20, inner sep=3pt},
+  ->, >=Latex, thick, node distance=1.5cm and 2cm
+]
+
+% Nodes
+\node[box] (vector) {Vector};
+\node[box, right=3cm of vector] (matrix) {Matrix};
+\node[box, below=1.8cm of matrix] (linear_map) {Linear/affine\\ mapping};
+\node[box, below left=1.5cm and 1.5cm of matrix] (system) {System of\\ linear equations};
+\node[box, below=1.8cm of system] (gauss) {Gaussian\\ elimination};
+\node[box, below=1.8cm of linear_map] (inverse) {Matrix\\ inverse};
+\node[box, right=3cm of matrix] (vector_space) {Vector space};
+\node[box, right=2.8cm of vector_space] (group) {Group\\ Abelian with +};
+\node[box, below=1.8cm of vector_space] (indep) {Linear\\ independence};
+\node[box, below=1.8cm of indep] (basis) {Basis};
+
+
+
+
+
+\end{tikzpicture}

@@ -1,0 +1,258 @@
+% Colors and custom commands
+
+% Define a custom command for highlighting text in a box
+
+\newcommand{\itlist}[1]{\begin{itemize} #1 \end{itemize}}
+\newcommand{\itenum}[1]{\begin{enumerate} #1 \end{enumerate}}
+
+\newcommand{\al}[1]{\begin{align} #1 \end{align}}
+\newcommand{\aln}{\begin{align*}}
+\newcommand{\ealn}{\end{align*}}
+
+% Math packages
+\usepackage{amsmath, amsfonts, amsthm, amssymb} % AMS packages for math
+\usepackage{mathrsfs} % For calligraphic fonts in math
+\usepackage{cancel} % For striking out equations
+\usepackage{bm} % For bold math symbols
+
+% SI Units
+\usepackage{siunitx} % For SI units
+\sisetup{locale = FR} % Setup for SI units localization
+
+% Graphics and Figures
+\usepackage{graphicx} % For including graphics
+\usepackage{float} % For figure placement control
+\usepackage{import} % For importing graphics
+\usepackage{pdfpages} % For including PDF pages
+\usepackage{transparent} % For transparency support
+\usepackage{pdflscape} % Optional for landscape pages
+
+% Theorem styles
+\usepackage{thmtools} % For defining theorem styles
+\usepackage[framemethod=TikZ]{mdframed} % For framed theorems
+
+% Define theorem styles
+% theorems
+\usepackage{thmtools}
+\usepackage[framemethod=TikZ]{mdframed}
+\mdfsetup{skipabove=1em,skipbelow=0em, innertopmargin=5pt, innerbottommargin=6pt}
+
+
+\theoremstyle{definition}
+
+\makeatletter
+
+
+\@ifclasswith{report}{nocolor}{
+    \declaretheoremstyle[headfont=\bfseries\sffamily, bodyfont=\normalfont, mdframed={ nobreak } ]{thmgreenbox}
+    \declaretheoremstyle[headfont=\bfseries\sffamily, bodyfont=\normalfont, mdframed={ nobreak } ]{thmredbox}
+    \declaretheoremstyle[headfont=\bfseries\sffamily, bodyfont=\normalfont]{thmbluebox}
+    \declaretheoremstyle[headfont=\bfseries\sffamily, bodyfont=\normalfont]{thmblueline}
+    \declaretheoremstyle[headfont=\bfseries\sffamily, bodyfont=\normalfont, numbered=no, mdframed={ rightline=false, topline=false, bottomline=false, }, qed=\qedsymbol ]{thmproofbox}
+    \declaretheoremstyle[headfont=\bfseries\sffamily, bodyfont=\normalfont, numbered=no, mdframed={ nobreak, rightline=false, topline=false, bottomline=false } ]{thmexplanationbox}
+    \AtEndEnvironment{eg}{\null\hfill$\diamond$}%
+}{
+    \declaretheoremstyle[
+    headfont=\color{black},  % Fake bold for Concrete Math
+    bodyfont=\normalfont,
+    mdframed={
+        linewidth=1pt,  % Set linewidth to 0 to remove the lines
+        rightline=false, topline=false, bottomline=false,
+        linecolor=myorange,  % Change line color to black (will have no effect since linewidth is 0)
+        backgroundcolor=myorange!5,  % Change background color to white (no color)
+    }
+    ]{thmorangebox} 
+
+    \declaretheoremstyle[
+        headfont=\color{black},  % Fake bold for Concrete Math
+        bodyfont=\normalfont,
+        mdframed={
+            linewidth=1pt,  % Set linewidth to 0 to remove the lines
+            rightline=false, topline=false, bottomline=false,
+            linecolor=brown,  % Change line color to black (will have no effect since linewidth is 0)
+            backgroundcolor=brown!5,  % Change background color to white (no color)
+    }
+    ]{thmbrownbox} 
+
+    \declaretheoremstyle[
+        headfont=\bfseries\sffamily\color{NavyBlue!70!black}, bodyfont=\normalfont,
+        mdframed={
+            linewidth=2pt,
+            rightline=false, topline=false, bottomline=false,
+            linecolor=NavyBlue, backgroundcolor=NavyBlue!5,
+        }
+    ]{thmbluebox}
+
+    \declaretheoremstyle[
+        headfont=\bfseries\sffamily\color{NavyBlue!70!black}, bodyfont=\normalfont,
+        mdframed={
+            linewidth=2pt,
+            rightline=false, topline=false, bottomline=false,
+            linecolor=NavyBlue
+        }
+    ]{thmblueline}
+
+    \declaretheoremstyle[
+        headfont=\bfseries\sffamily\color{RawSienna!70!black}, bodyfont=\normalfont,
+        mdframed={
+            linewidth=2pt,
+            rightline=false, topline=false, bottomline=false,
+            linecolor=RawSienna, backgroundcolor=RawSienna!5,
+        }
+    ]{thmredbox}
+
+    \declaretheoremstyle[
+        headfont=\bfseries\sffamily\color{RawSienna!70!black}, bodyfont=\normalfont,
+        numbered=no,
+        mdframed={
+            linewidth=2pt,
+            rightline=false, topline=false, bottomline=false,
+            linecolor=RawSienna, backgroundcolor=RawSienna!1,
+        },
+        qed=\qedsymbol
+    ]{thmproofbox}
+
+    \declaretheoremstyle[
+        headfont=\bfseries\sffamily\color{NavyBlue!70!black}, bodyfont=\normalfont,
+        numbered=no,
+        mdframed={
+            linewidth=2pt,
+            rightline=false, topline=false, bottomline=false,
+            linecolor=NavyBlue, backgroundcolor=NavyBlue!1,
+        },
+    ]{thmexplanationbox}
+}
+
+
+
+
+
+\declaretheorem[style=thmorangebox, name=Definition]{definition}
+\declaretheorem[style=thmbrownbox, numbered=no, name = {}]{A}
+\declaretheorem[style=thmorangebox, numbered=no, name=Question]{Q}
+\declaretheorem[style=thmredbox, name=Proposition]{prop}
+\declaretheorem[style=thmredbox, name=Theorem]{theorem}
+\declaretheorem[style=thmgreenbox, name=Proof]{pf}
+
+\@ifclasswith{report}{nocolor}{
+    \declaretheorem[style=thmproofbox, name=Proof]{replacementproof}
+    \declaretheorem[style=thmexplanationbox, name=Proof]{explanation}
+    \renewenvironment{proof}[1][\proofname]{\begin{replacementproof}}{\end{replacementproof}}
+}{
+    \declaretheorem[style=thmproofbox, name=Proof]{replacementproof}
+    \renewenvironment{proof}[1][\proofname]{\vspace{-10pt}\begin{replacementproof}}{\end{replacementproof}}
+
+    \declaretheorem[style=thmexplanationbox, name=Proof]{tmpexplanation}
+    \newenvironment{explanation}[1][]{\vspace{-10pt}\begin{tmpexplanation}}{\end{tmpexplanation}}
+}
+
+\makeatother
+
+
+\declaretheorem[style=thmblueline, numbered=no, name=Remark]{remark}
+\declaretheorem[style=thmblueline, numbered=no, name=Note]{note}
+
+\newtheorem*{uovt}{UOVT}
+\newtheorem*{notation}{Notation}
+\newtheorem*{previouslyseen}{As previously seen}
+\newtheorem*{problem}{Problem}
+\newtheorem*{observe}{Observe}
+\newtheorem*{property}{Property}
+\newtheorem*{intuition}{Intuition}
+
+
+\usepackage{etoolbox}
+\AtEndEnvironment{vb}{\null\hfill$\diamond$}%
+\AtEndEnvironment{intermezzo}{\null\hfill$\diamond$}%
+% \AtEndEnvironment{opmerking}{\null\hfill$\diamond$}%
+
+% http://tex.stackexchange.com/questions/22119/how-can-i-change-the-spacing-before-theorems-with-amsthm
+% \def\thm@space@setup{%
+%   \thm@preskip=\parskip \thm@postskip=0pt
+% }
+
+\newcommand{\oefening}[1]{%
+    \def\@oefening{#1}%
+    \subsection*{Oefening #1}
+}
+
+\newcommand{\suboefening}[1]{%
+    \subsubsection*{Oefening \@oefening.#1}
+}
+
+\newcommand{\exercise}[1]{%
+    \def\@exercise{#1}%
+    \subsection*{Exercise #1}
+}
+
+\newcommand{\subexercise}[1]{%
+    \subsubsection*{Exercise \@exercise.#1}
+}
+
+
+\usepackage{xifthen}
+
+\def\testdateparts#1{\dateparts#1\relax}
+\def\dateparts#1 #2 #3 #4 #5\relax{
+    \marginpar{\small\textsf{\mbox{#1 #2 #3 #5}}}
+}
+
+\def\@lesson{}%
+\newcommand{\lesson}[3]{
+    \ifthenelse{\isempty{#3}}{%
+        \def\@lesson{Lecture #1}%
+    }{%
+        \def\@lesson{Lecture #1: #3}%
+    }%
+    \subsection*{\@lesson}
+    \testdateparts{#2}
+}
+
+% \renewcommand\date[1]{\marginpar{#1}}
+% Custom commands
+\newcommand\N{\ensuremath{\mathbb{N}}} % Natural numbers
+\newcommand\R{\ensuremath{\mathbb{R}}} % Real numbers
+\newcommand\Z{\ensuremath{\mathbb{Z}}} % Integers
+\newcommand\C{\ensuremath{\mathbb{C}}} % Complex numbers
+\newcommand\hr{ % Horizontal rule
+    \noindent\rule[0.5ex]{\linewidth}{0.5pt}
+}
+
+% Notes and comments
+\usepackage{tcolorbox} % For colored boxes
+\tcbuselibrary{breakable}
+
+\newenvironment{verbetering}{%
+    \begin{tcolorbox}[colback=white, colframe=green!60!black, title=Opmerking, fonttitle=\sffamily, breakable]
+}{%
+    \end{tcolorbox}
+}
+
+% Fancy headers and footers
+\usepackage{fancyhdr}  % For fancy headers
+\pagestyle{fancy}  % Enable fancy page style
+\fancyhf{}  % Clear all header and footer fields
+\fancyhead[L]{ \small ECON2001 Intermediate Micro II - Project} % Left header
+\renewcommand{\headrulewidth}{0pt}  % Remove the header line
+
+% Ensure all header text fits within page margins
+\newcommand{\setheader}[1]{%
+    \fancyhead[R]{\small #1 | \thepage}  % Right header with title and page number
+}
+
+% Adjust headheight as per warning message
+\setlength{\headheight}{13.2165pt} % Adjust headheight to prevent warnings
+
+
+
+% Figure support
+\newcommand{\incfig}[1]{%
+    \def\svgwidth{\columnwidth}
+    \import{./figures/}{#1.pdf_tex}
+}
+
+
+\usepackage{enumerate}
+\usepackage{tikz}
+\usepackage{multicol}
+\usepackage{booktabs}

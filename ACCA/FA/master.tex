@@ -1,0 +1,63 @@
+\documentclass{article}
+\usepackage[a4paper, margin=0.75in]{geometry}
+\usepackage{titlesec}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning}
+
+
+\titleformat{\subsubsection}[block]{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\usepackage{preamble04}
+
+\titleformat{\section}
+{\normalfont\Large} 
+  {\thesection}{1em}{}
+
+\begin{document}
+
+\input{journal_entries}
+% Chapter 1 
+% \input{Questions.03.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%A. The Context and Purpose of Financial Statements
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \input{note01.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%B. The Qualitative Characteristics of Financial Information 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \input{note02.tex}
+%\input{note03.tex}
+%\input{note04.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%C. The Use of Double Entry and Accounting Systems
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\input{note05.tex}
+%\input{note06.tex}
+%\input{note14.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%D. Recording Transactions and Events
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\input{note07.tex}
+%\input{note08.tex}
+%\input{note09.tex}
+%\input{note10.tex} 
+%\input{note11.tex}
+%\input{note12.tex} 
+%\input{note13.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%E. Preparing Trial Balances and Basic Financial Statements
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{note15.tex}
+%\input{note16.tex}
+\input{note17.tex}
+\end{document}

@@ -1,0 +1,27 @@
+\documentclass[master.tex]{subfiles}  % Link to the main document
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm, compat=1.18}
+
+\begin{document}
+
+\begin{tikzpicture}
+    \begin{axis}[
+        xlabel={Year},
+        ylabel={Public Sector Debt (\% of GDP)},
+        title={Public Sector Debt to GDP in Macaronia (2015-2022)},
+        xtick=data,  % Show all years as ticks
+        xticklabels from table={public_debt.csv}{Year},  % Use years from the CSV file
+        x tick label style={rotate=45, anchor=east},  % Rotate x-axis labels for better readability
+        legend pos=north west,  % Position the legend
+        grid=major,  % Add a grid
+        ymajorgrids=true,  % Enable horizontal grid lines
+        nodes near coords,  % Show values on the plot
+        nodes near coords align={vertical},  % Align values vertically
+    ]
+    % Plot for Public Sector Debt
+    \addplot[blue, mark=*] table [x expr=\coordindex, y=Value, col sep=comma] {public_debt.csv};
+    \addlegendentry{Public Sector Debt}
+    \end{axis}
+\end{tikzpicture}
+
+\end{document}

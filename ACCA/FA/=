@@ -1,0 +1,13 @@
+c_asset = ""
+current_assets = {
+    "cash": {
+        "value": 1000,
+        "less": {"adjustment": 200, "bank fee": 400},
+    }
+}
+
+for key, value in current_assets.items():
+    for y in value.items():
+        print(f"{key}:{y}")
+
+print(c_asset)
