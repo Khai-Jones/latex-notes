@@ -192,3 +192,25 @@
   \end{tikzpicture}
 }
 
+\usepackage{hyperref}
+
+
+\newcommand{\linkbox}[2]{%
+  \href{#1}{%
+    \begin{tcolorbox}[
+      colback=orange!10,
+      colframe=orange!80!black,
+      boxrule=1pt,
+      arc=4pt,
+      boxsep=5pt,
+      width=\linewidth,
+      enlarge left by=0mm,
+      enlarge right by=0mm,
+    ]
+    \centering \textbf{#2}
+    \end{tcolorbox}%
+  }%
+}
+
+
+
