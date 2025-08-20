@@ -34,6 +34,176 @@
 Receivables are debts owed to a business by its customers, typically originating from previous credit transactions. 
 
 
-\subsection{Formulas}
 
-$\text{Allowance} = \sum_{i=1}^{m} (S_i \times \text{Allowance Rate}_i) + \sum_{j=1}^{n} (G_j \times \text{Allowance Rate}_j)$
+\section{Formulas}
+
+\subsection{Allowance for Doubtful Debts}
+
+\[
+\text{Allowance} = \sum_{i=1}^{m} (S_i \times \text{Allowance Rate}_i) + \sum_{j=1}^{n} (G_j \times \text{Allowance Rate}_j)
+\]
+
+\subsubsection{Step 1: Writing off irrecoverable (bad) debt}
+
+\[
+\text{DR Irrecoverable Debts Expense (P/L)} = \text{amount}
+\]
+\[
+\text{CR Trade Receivables (SFP)} = \text{amount}
+\]
+
+\subsubsection{Step 2: Calculating the allowance}
+
+1. Identify specific receivables requiring 100\% allowance:
+\[
+\text{Allowance} = \text{Receivable Balance} \times 100\%
+\]
+
+2. Apply a percentage allowance to the remaining receivables:
+\[
+\text{Allowance} = \text{Remaining Receivables} \times \text{Allowance Rate}
+\]
+
+3. Closing allowance = total of specific + general allowances.
+
+\subsubsection{Step 3: Adjustment for allowance at year-end}
+
+If Closing Allowance $>$ Opening Allowance:
+\[
+\text{DR Irrecoverable Debts Expense}, \quad \text{CR Allowance for Doubtful Debts}
+\]
+
+If Closing Allowance $<$ Opening Allowance:
+\[
+\text{DR Allowance for Doubtful Debts}, \quad \text{CR Irrecoverable Debts Expense}
+\]
+
+\subsubsection{Step 4: When a debt is written off after an allowance was made}
+
+\[
+\text{DR Irrecoverable Debts Expense}, \quad \text{CR Trade Receivables}
+\]
+
+Simultaneously, reduce the allowance account (credit to expense), so the debt is not double-counted.
+
+\subsubsection{Formula Summary}
+
+\[
+\text{Closing Allowance} = \text{Specific Doubtful Debts} + (\text{Remaining Receivables} \times \text{General \%})
+\]
+
+\[
+\text{Adjustment} = \text{Closing Allowance} - \text{Opening Allowance}
+\]
+
+---
+
+\section{Accounting Equation}
+
+\[
+\text{Capital} = \text{Assets} - \text{Liabilities}
+\]
+
+\[
+\text{Capital at Year-end} = \text{Opening Capital} + \text{Capital Introduced} + \text{Profit} - \text{Drawings}
+\]
+
+Rearranging for Profit:
+
+\[
+\text{Profit} = (\text{Assets} - \text{Liabilities}) - (\text{Opening Capital} + \text{Capital Introduced}) + \text{Drawings}
+\]
+
+---
+
+\section{Control Account Pro formas}
+
+\subsection{Trade Receivables}
+
+\[
+\text{Credit Sales} = \text{Cash Received from Customers} + \text{Closing Receivables} - \text{Opening Receivables}
+\]
+
+\[
+\text{Closing Receivables} = \text{Credit Sales} - \text{Cash Received} + \text{Opening Receivables}
+\]
+
+\subsection{Trade Payables}
+
+\[
+\text{Credit Purchases} = \text{Cash Paid to Suppliers} + \text{Closing Payables} - \text{Opening Payables}
+\]
+
+\[
+\text{Closing Payables} = \text{Credit Purchases} - \text{Cash Paid to Suppliers} + \text{Opening Payables}
+\]
+
+\subsection{Bank (Cash) Account}
+
+\[
+\text{Opening Bank Balance} + \text{Cash Receipts} = \text{Cash Payments} + \text{Closing Bank Balance}
+\]
+
+\[
+\text{Drawings} = \text{Opening Bank Balance} + \text{Cash from Customers} - \text{Cash to Suppliers} - \text{Other Expenses Paid} - \text{Closing Bank Balance}
+\]
+
+---
+
+\section{Mark-up, Margin and Inventory Formulas}
+
+\subsection{1. Mark-up (profit on cost)}
+
+\[
+\text{Sales} = \text{COGS} \times \frac{100 + \text{Mark-up \%}}{100}
+\]
+
+\[
+\text{COGS} = \text{Sales} \times \frac{100}{100 + \text{Mark-up \%}}
+\]
+
+\[
+\text{Gross Profit} = \text{Sales} \times \frac{\text{Mark-up \%}}{100 + \text{Mark-up \%}}
+\]
+
+\subsection{2. Margin (profit on sales)}
+
+\[
+\text{Sales} = \text{COGS} \times \frac{100}{100 - \text{Margin \%}}
+\]
+
+\[
+\text{COGS} = \text{Sales} \times \frac{100 - \text{Margin \%}}{100}
+\]
+
+\[
+\text{Gross Profit} = \text{Sales} \times \frac{\text{Margin \%}}{100}
+\]
+
+\subsection{3. Inventory}
+
+\[
+\text{COGS} = \text{Opening Inventory} + \text{Purchases} - \text{Closing Inventory}
+\]
+
+\[
+\text{Closing Inventory} = \text{Opening Inventory} + \text{Purchases} - \text{COGS}
+\]
+
+\[
+\text{Inventory Lost or Drawn for Personal Use} = \text{Expected Closing Inventory} - \text{Actual Closing Inventory}
+\]
+
+---
+
+\subsection{Decision Aid}
+
+\begin{itemize}
+    \item If percentage is based on cost $\rightarrow$ use Mark-up formulas.
+    \item If percentage is based on sales $\rightarrow$ use Margin formulas.
+    \item If the question involves missing stock or movement $\rightarrow$ use Inventory formulas.
+\end{itemize}
+
+
+
+

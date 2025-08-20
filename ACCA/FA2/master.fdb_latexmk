@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1755575127.62421 "master.tex" "master.pdf" "master" 1755575129.98488 0
+["pdflatex"] 1755660637.938 "master.tex" "master.pdf" "master" 1755660640.645 0
   "-" 1752709602.8904 2706 0cbb654e487fa17a32ad3a6471378d50 ""
   "/home/khaijones/texmf/tex/latex/local/preamble04.sty" 1753930395.81387 6592 d21575540ec19ffd64980b8fb48d97f3 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -252,12 +252,15 @@
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1752667539 11133763 e2880e8cb0c0ad36ccefeeeda0d2e52a ""
   "FApreamble.tex" 1753967026.25697 5958 cc700fda53c8177e3896703b97b7be6e ""
   "cash.tex" 1753926540.98686 1 68b329da9893e34099c7d8ad5cb9c940 ""
+  "ch11_formulas.tex" 1755660621.75636 2871 e5f1208e6a2f742682cc71b106a617eb ""
+  "ch13_formulas.tex" 1755660406.74391 2119 05ea8cbc685f25f65eb04a0fb489cf2e ""
+  "ch8_formulas.tex" 1755660320.46332 1384 29427320a7c5f8ae188d0cc9f6b5c1bc ""
   "financial_accounting.tex" 1753926478.52354 5 cc9067c2ee470dc248b14b194209a34e ""
   "journal_entries.tex" 1753928970.43549 10133 09be5fe16dfbf1c696863a5ee496eb16 ""
-  "master.aux" 1755575129.73691 1478 9d8190b808cb0fec52dd7217179dd772 "pdflatex"
-  "master.out" 1755575129.73791 936 5bc82b7ab7cdbc43f13cf1ef43d77380 "pdflatex"
-  "master.tex" 1753926606.34024 183 9bed8799771f23b8c8928ee8b4b4ae00 ""
-  "receivables.tex" 1755575126.76681 3069 8a82a67ea867f6cf0967d4e013b6846c ""
+  "master.aux" 1755660640.38292 4779 82c239dbc1922fa64d29cde98f67d157 "pdflatex"
+  "master.out" 1755660640.38492 4262 b1603d4e4eb3b79bc8335dd036e22501 "pdflatex"
+  "master.tex" 1755660633.26171 260 50fc8fc430af9c94b5a9593588ff90f3 ""
+  "receivables.tex" 1755608656.28259 7044 89665acd60b8e435b5313ea8c1f7525c ""
   (generated)
   "master.aux"
   "master.log"
