@@ -1650,6 +1650,13 @@ INPUT ./ch13_formulas.tex
 INPUT ch13_formulas.tex
 INPUT ./ch13_formulas.tex
 INPUT ch13_formulas.tex
+INPUT ./SPOL_questions.tex
+INPUT ./SPOL_questions.tex
+INPUT ./SPOL_questions.tex
+INPUT SPOL_questions.tex
+INPUT ./SPOL_questions.tex
+INPUT ./SPOL_questions.tex
+INPUT SPOL_questions.tex
 INPUT master.aux
 INPUT ./master.out
 INPUT ./master.out
