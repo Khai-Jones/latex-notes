@@ -1634,6 +1634,10 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm
+INPUT ./NCA.tex
+INPUT NCA.tex
+INPUT ./NCA.tex
+INPUT NCA.tex
 INPUT ./journal_entries.tex
 INPUT journal_entries.tex
 INPUT ./journal_entries.tex
