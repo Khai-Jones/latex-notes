@@ -1654,6 +1654,10 @@ INPUT ./ch13_formulas.tex
 INPUT ch13_formulas.tex
 INPUT ./ch13_formulas.tex
 INPUT ch13_formulas.tex
+INPUT ./ch15_preparing_financial_statements.tex
+INPUT ch15_preparing_financial_statements.tex
+INPUT ./ch15_preparing_financial_statements.tex
+INPUT ch15_preparing_financial_statements.tex
 INPUT ./consolidated_financial_statements.tex
 INPUT consolidated_financial_statements.tex
 INPUT ./consolidated_financial_statements.tex
@@ -1665,6 +1669,10 @@ INPUT SPOL_questions.tex
 INPUT ./SPOL_questions.tex
 INPUT ./SPOL_questions.tex
 INPUT SPOL_questions.tex
+INPUT ./cash_flows.tex
+INPUT cash_flows.tex
+INPUT ./cash_flows.tex
+INPUT cash_flows.tex
 INPUT master.aux
 INPUT ./master.out
 INPUT ./master.out

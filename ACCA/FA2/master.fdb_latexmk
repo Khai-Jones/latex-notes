@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1755920370.60476 "master.tex" "master.pdf" "master" 1755920374.12456 0
+["pdflatex"] 1756093307.87775 "master.tex" "master.pdf" "master" 1756093311.6445 0
   "-" 1752709602.8904 2706 0cbb654e487fa17a32ad3a6471378d50 ""
   "/home/khaijones/texmf/tex/latex/local/preamble04.sty" 1753930395.81387 6592 d21575540ec19ffd64980b8fb48d97f3 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -252,17 +252,19 @@
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1752667539 11133763 e2880e8cb0c0ad36ccefeeeda0d2e52a ""
   "FApreamble.tex" 1753967026.25697 5958 cc700fda53c8177e3896703b97b7be6e ""
   "NCA.tex" 1755920330.09504 1090 e83b5bb0651bbc55a0e873a44a4eda2f ""
-  "SPOL_questions.tex" 1755747367.8469 655 7140592a533acfb9e1cd18a415c40bb6 ""
+  "SPOL_questions.tex" 1755982041.17371 2617 b1dd2a8e6ec21a1dd9889788ab3e589a ""
   "cash.tex" 1753926540.98686 1 68b329da9893e34099c7d8ad5cb9c940 ""
+  "cash_flows.tex" 1755982062.28419 2784 7e1c600cee7fa34a94ab1d27ef829fcb ""
   "ch11_formulas.tex" 1755660621.75636 2871 e5f1208e6a2f742682cc71b106a617eb ""
   "ch13_formulas.tex" 1755660406.74391 2119 05ea8cbc685f25f65eb04a0fb489cf2e ""
+  "ch15_preparing_financial_statements.tex" 1756093280.84695 1116 2699eff6634e55b6fe2729ea9f830342 ""
   "ch8_formulas.tex" 1755660320.46332 1384 29427320a7c5f8ae188d0cc9f6b5c1bc ""
   "consolidated_financial_statements.tex" 1755833216.67141 526 d4f6be1f13c11f2e7f454606f3e37794 ""
   "financial_accounting.tex" 1753926478.52354 5 cc9067c2ee470dc248b14b194209a34e ""
   "journal_entries.tex" 1753928970.43549 10133 09be5fe16dfbf1c696863a5ee496eb16 ""
-  "master.aux" 1755920373.64512 5026 6f3361383de2f05af1c74614ddee13d1 "pdflatex"
-  "master.out" 1755920373.64766 4614 a8e1231804a64e7683dc39f45174d44e "pdflatex"
-  "master.tex" 1755920365.34685 345 fa1ca33f5ac8627458841527a8f10461 ""
+  "master.aux" 1756093311.39562 5088 6aa635388edff692a3f2e0937cf22f31 "pdflatex"
+  "master.out" 1756093311.39662 4614 a8e1231804a64e7683dc39f45174d44e "pdflatex"
+  "master.tex" 1756093305.08548 416 9ab1c36f96e81b0d5291d9bf6f1ae0da ""
   "receivables.tex" 1755608656.28259 7044 89665acd60b8e435b5313ea8c1f7525c ""
   (generated)
   "master.aux"
