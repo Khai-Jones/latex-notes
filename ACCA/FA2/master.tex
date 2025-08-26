@@ -1,8 +1,12 @@
 \input{FApreamble.tex}
 \usepackage{preamble04}
 
-\begin{document}
+% Make section titles smaller
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\small\bfseries}{\thesubsubsection}{1em}{}
 
+\begin{document}
 \input{financial_accounting.tex}
 \input{cash.tex}
 \input{receivables.tex}
@@ -12,6 +16,7 @@
 \input{ch11_formulas.tex}
 \input{ch13_formulas.tex}
 \input{ch15_preparing_financial_statements.tex}
+\input{ch16_IAS16_7_Statement_of_Cash_Flows.tex}
 \input{consolidated_financial_statements.tex}
 \input{SPOL_questions}
 \input{cash_flows.tex}
