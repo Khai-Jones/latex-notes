@@ -1631,14 +1631,6 @@ INPUT ./receivables.tex
 INPUT receivables.tex
 INPUT ./receivables.tex
 INPUT receivables.tex
-INPUT ./NCA.tex
-INPUT NCA.tex
-INPUT ./NCA.tex
-INPUT NCA.tex
-INPUT ./journal_entries.tex
-INPUT journal_entries.tex
-INPUT ./journal_entries.tex
-INPUT journal_entries.tex
 INPUT ./ch5_business_transactions.tex
 INPUT ch5_business_transactions.tex
 INPUT ./ch5_business_transactions.tex
